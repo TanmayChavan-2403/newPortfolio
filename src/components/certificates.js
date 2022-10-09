@@ -17,7 +17,7 @@ const Certificates = props => {
                         link="https://drive.google.com/uc?export=download&id=1m4DjC44rX2FrhofexOaboFgWppdhxrcc"
                     />
                     <Badge
-                        text="Ylytic Internship certificate ( 2 Months )"
+                        text="Ylytic Internship certificate (2 Months)"
                         link="https://drive.google.com/uc?export=download&id=1Vj4W0K2H8gINn5aFeIcF6c-8Kx4zMvNi"
                     />
                     <Badge

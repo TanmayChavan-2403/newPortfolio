@@ -20,7 +20,6 @@
 	display: grid;
 	margin: 0px auto;
 	overflow: scroll;
-	border: 1px solid white;
 	grid-template-columns: 0.8fr 1fr 0.7fr;
 	grid-template-rows: repeat(4, 42%);
 }
@@ -114,7 +113,7 @@
 @media (max-width: 550px){
 	.InnerWrapper{
 		grid-template-columns: 1fr;
-		grid-template-rows: repeat(6, 35%);
+		grid-template-rows: repeat(8, 25%);
 	}
 	.hobbyCont:nth-child(1){
 		grid-row-start: 1;

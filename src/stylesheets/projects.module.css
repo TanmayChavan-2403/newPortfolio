@@ -1,3 +1,7 @@
+a{
+	text-decoration: none;
+}
+
 .project{
 	top: 0px;
 	width: 0%;
@@ -62,7 +66,7 @@
 @media (max-width: 550px){
 	.InnerWrapper{
 		grid-template-columns: 1fr;
-		grid-template-rows: repeat(6, 35%);
+		grid-template-rows: repeat(11, 25%);
 	}
 
 	.anchors:nth-child(1){

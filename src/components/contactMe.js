@@ -15,7 +15,7 @@ const ContactMe = props => {
                         </div>
                     </a>
                     
-                    <a href="https://www.codechef.com/users/hackytech" target="_blank">
+                    <a href="https://www.codechef.com/users/hackytech" className={style.contactBox} target="_blank">
                         <div className={style.contactBox}>
                             <img src="./SMLogo/codechef.svg"></img>
                             <h3>Codechef</h3>
@@ -27,14 +27,14 @@ const ContactMe = props => {
                         <h3>Whatsapp</h3>
                     </div>
 
-                    <a href="https://app.codesignal.com/profile/hackytech" target="_blank">
+                    <a href="https://app.codesignal.com/profile/hackytech" className={style.contactBox} target="_blank">
                         <div className={style.contactBox}>
                             <img src="./SMLogo/codesignal.svg"></img>
                             <h3>Codesignal</h3>
                         </div>
                     </a>
 
-                    <a href="https://www.hackerrank.com/tanmaychavan1306" target="_blank">
+                    <a href="https://www.hackerrank.com/tanmaychavan1306" className={style.contactBox} target="_blank">
                         <div className={style.contactBox}>
                             <img src="./SMLogo/hackerRank.svg"></img>
                             <h3>Hackerrank</h3>
@@ -45,7 +45,7 @@ const ContactMe = props => {
                         <img src="./SMLogo/gapFiller.jpg"></img>
                     </div>
 
-                    <a href="mailto:tanmaychavan1306@gmail.com" target="_blank">
+                    <a href="mailto:tanmaychavan1306@gmail.com" className={style.contactBox} target="_blank">
                         <div className={style.contactBox}>
                             <img src="./SMLogo/email.svg"></img>
                             <h3>Email</h3>

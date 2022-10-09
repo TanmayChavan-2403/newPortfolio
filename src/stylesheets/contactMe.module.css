@@ -72,13 +72,9 @@
 }
 
 .gridColSpan2{
-    aspect-ratio: 1/0.43;
+    aspect-ratio: 1/0.46;
 	grid-column: span 2;
 }
-
-
-
-
 
 
 
@@ -160,6 +156,7 @@
     }
 
     .contactBox{
+        height: 100%;
         aspect-ratio: auto;
     }
 
@@ -181,10 +178,12 @@
     
     .contactBox h3{
         left: 50%;
+        top: 50%;
+        height: fit-content;
         bottom: 10px;
         color: #272727;
         text-align: center;
         position: absolute;
-        transform: translateX(-50%);
+        transform: translate(-50%, -50%);
     }
 }
