@@ -1,0 +1,200 @@
+
+#menu{
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	z-index: 950;
+	position: absolute;
+	justify-content: space-between;
+}
+
+.menuCharacter{
+	width: 45%;
+	display: flex;
+	transition: 0.9s;
+	align-items: center;
+	justify-content: flex-end;
+	background-color: #4f4e4e;
+}
+
+.menuCharacter img{
+	width: 405px;
+	height: 520px;
+	margin-right: 25px;
+}
+
+.menuOptions{
+	width: 55%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	transition: 0.9s;
+	/*align-content: center;*/
+}
+
+.menuWrapper1{
+	width: 100%;
+	height: 59%;
+}
+
+.menuAnimationWrapper1{
+	width: 0%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	transition: 0.8s;
+	background-color: #424242;
+	align-content: flex-end;
+	justify-content: center;
+}
+
+.menuWrapper2{
+	width: 100%;
+	height: 0%;
+	display: flex;
+	transition: 0.8s;
+	justify-content: center;
+	background-color: #333232;
+}
+
+.menuTiles{
+	width: 458px;
+	height: 290px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 25px;
+	align-content: space-between;
+}
+
+.menuTiles2{
+	width: 458px;
+	height: 135px;
+	margin-left: 25px;
+	margin-top: 25px;
+}
+
+
+#sec1{
+	width: 100%;
+	height: 290px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#sec2{
+	width: 100%;
+	height: 135px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#sec3{
+	width: 135px;
+	height: 290px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 20px;
+	align-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#phoneMenu{
+	width: 100%;
+	height: 0%;
+	display: flex;
+	transition: 0.6s;
+	align-items: center;
+	background-color: #242424;
+}
+
+#phoneMenu ul{
+	width: 80%;
+	margin: 0px auto;
+	list-style: none;
+	height: fit-content;
+}
+
+#phoneMenu ul li{
+	list-style: none;
+	position: relative;
+	background-color: white;
+}
+
+
+
+.Mask{
+	width: 100%;
+	height: 100%;
+	background-color: red;
+}
+
+.CTA{
+	width: 100%;
+	height: 50px;
+	margin: 20px;
+	cursor: pointer;
+}
+
+.CTA img{
+	width: 100%;
+	opacity: 0.3;
+	object-fit: cover;
+}
+
+
+.CTA h1{
+	top: 50%;
+	left: 50%;
+	color: #242424;
+	font-weight: 800;
+	position: absolute;
+	white-space: nowrap;
+	font-size: clamp(1rem, 1.5rem, 4rem);
+	transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 860px){
+	.menuCharacter{
+		display: none;
+	}
+
+	.menuOptions{
+		width: 100%;
+	}
+
+	.menuTiles{
+		margin: 0px;
+	}
+
+	.menuTiles2{
+		margin-left: 0px;
+	}
+}
+
+@media (max-width: 480px){
+
+}

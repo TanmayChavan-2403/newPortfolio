@@ -1,0 +1,116 @@
+.list{
+	width: 100%;
+	height: 10%;
+	display: flex;
+	transition: 2s;
+	min-height: 50px;
+	column-gap: 0.5rem;
+	border-radius: 7px;
+	align-items: center;
+	background-color: #313030;
+	justify-content: space-between;
+	font-size: clamp(1rem, 1.2vw, 2vw);
+}
+
+.checkBox{
+	height: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 8px 0px 15px;
+}
+
+.radioBtn{
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+	border: 1px solid white;
+}
+
+.radioBtn img{
+	width: 100%;
+	height: 100%;
+}
+
+.meaning{
+	width: 77%;
+	padding: 5px;
+	color: white;
+	display: flex;
+	flex-grow: 2;
+	align-items: center;
+	min-height: inherit;
+	word-break: break-all;
+	
+}
+
+.delete{
+	height: 55px;
+	display: flex;
+	/*min-width: 55px;*/
+	padding: 0px 13px;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.delete img{
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+
+.menuList{
+	top: 45%;
+	right: 105%;
+	width: 110px;
+	height: 0px;
+	overflow: hidden;
+	transition: 0.1s;
+	position: absolute;
+	/*border-radius: 5px;*/
+	/*background-color: #474747;*/
+	background-color: white;
+}
+
+.menuList ul{
+	width: 100%;
+	height: 100%;
+	list-style: none;
+}
+
+.menuList ul li{
+	width: 100%;
+	height: 50%;
+	/*color: white;*/
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+}
+
+.menuList ul li:hover{
+	background-color: #e6e3e3;
+}
+
+.menuList ul li img{
+	width: 15px;
+	height: 15px;
+	margin: 0px 3px;
+}
+
+.menu{
+	height: 55px;
+	display: flex;
+	min-width: 55px;
+	padding: 0px 5px;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu img{
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+
