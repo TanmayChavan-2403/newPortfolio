@@ -18,6 +18,7 @@ const Hobbies = (props) => {
 						<GridContainer text="Sketching" image="./bg/Sketching.jpg" />
 						<GridContainer text="Problem solving" image="./bg/problemSolving.jpg" />
 						<GridContainer text="Listening to songs" image="./bg/songs.jpg" />
+						<GridContainer text="Cycling" image="./bg/cycling.jpg" />
 						<GridContainer text="Watching series on weekends" span image="./bg/watching.jpg" />
 					</div>
 				</div>

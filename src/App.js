@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react';
 import Home from './components/home.js';
 import Menu from './components/menu.js';
+import Todo from './components/todo.js';
 import Hobbies from './components/hobbies.js';
 import Project from './components/project.js';
-import Todo from './components/todo.js';
 import ContactMe from './components/contactMe.js';
 import Certificates from './components/certificates.js';
 import style from './stylesheets/home.module.css';
@@ -19,11 +19,12 @@ function App() {
     let [height2, setHeight2] = useState({height: "0%"})
     let [menuWidth, setWidth] = useState({width: "0%"})
     let [menuHeight, setHeight] = useState({height: "0%"})
-    let [hobbyDimension, setHobbyDimension ] = useState({width: "0%"})
-    let [projectDimension, setProjectDimension] = useState({width: "0"})
-    let [todosDimension, setTodosDimension] = useState({width: "0"})
-    let [certifDimension, setCertifDimension] = useState({width: "0"})
-    let [contactDimension, setContactDimension] = useState({width: "0"})
+    let [hobbyDimension, setHobbyDimension ] = useState({right: "-100%"})
+    let [projectDimension, setProjectDimension] = useState({right: "-100%"})
+    let [todosDimension, setTodosDimension] = useState({right: "-100%"})
+    let [certifDimension, setCertifDimension] = useState({right: "-100%"})
+    let [contactDimension, setContactDimension] = useState({right: "-100%"})
+
 
     let [menuStyle, setMenuStyle] = useState({pointerEvents: "None"})
     let [scale, setScale] = useState({prop1: 'scale(0)',
@@ -47,7 +48,6 @@ function App() {
                         setScale(prev => ({...prev, [key]: 'scale(1)'}));
                     }, 50*i)
                 }
-
             }, 500)
 
         } else {
@@ -96,19 +96,19 @@ function App() {
         setTimeout(() => {
             switch(component){
                 case 'Projects':
-                    toggle ? setProjectDimension({width: "100%"}) : setProjectDimension({width: "0%"})
+                    toggle ? setProjectDimension({right: "0%"}) : setProjectDimension({right: "-100%"})
                     break
                 case 'Contact Me':
-                    toggle ? setContactDimension({width: "100%"}) : setContactDimension({width: "0%"})
+                    toggle ? setContactDimension({right: "0%"}) : setContactDimension({right: "-100%"})
                     break
                 case "Certifications":
-                    toggle ? setCertifDimension({width: "100%"}) : setCertifDimension({width: "0%"})
+                    toggle ? setCertifDimension({right: "0%"}) : setCertifDimension({right: "-100%"})
                     break
                 case "Todo's":
-                    toggle ? setTodosDimension({width: "100%"}) : setTodosDimension({width: "0%"})
+                    toggle ? setTodosDimension({right: "0%"}) : setTodosDimension({right: "-100%"})
                     break
                 case 'Hobbies':
-                    toggle ? setHobbyDimension({width: "100%"}) : setHobbyDimension({width: "0%"});
+                    toggle ? setHobbyDimension({right: "0%"}) : setHobbyDimension({right: "-100%"});
                     break
                 default:
                     console.log('Something went wrong');
@@ -124,7 +124,7 @@ function App() {
             <Hobbies width={hobbyDimension} />
             <Project width={projectDimension} />
             <Todo width={todosDimension}/>
-            <ContactMe width={contactDimension} />
+            <ContactMe width={contactDimension}/>
             <Certificates width={certifDimension} />
         </React.Fragment>
     );

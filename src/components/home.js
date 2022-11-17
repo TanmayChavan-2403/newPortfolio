@@ -28,6 +28,7 @@ const Home = (props) => {
 							<Cube styles={{backgroundColor: "#ffffff", paddingBottom, margin}} text={false} src="dsa.png" />
 							<Cube styles={{backgroundColor: "#f6f4ce", paddingBottom, margin}} text={false} src="mongodb.png" />
 							<Cube styles={{backgroundColor: "#3773a5", paddingBottom, margin}} text={false} src="tkinter.png" />
+							<Cube styles={{backgroundColor: "#1e1e1e", paddingBottom, margin}} text={false} src="figma.png" />
 					</div>
 				</div>
 				<div id={style.sec2}>
