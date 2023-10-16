@@ -1,7 +1,6 @@
 import React, { Component, useRef } from 'react';
 import style from './list.module.css';
-import { markCompleted, markInCompleted } from '../../db/firebase.js'
- 
+
 class List extends Component{
 	constructor(props){
 		super(props);

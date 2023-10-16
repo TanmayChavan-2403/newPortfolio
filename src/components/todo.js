@@ -4,7 +4,6 @@ import NewTask from './newTask.js';
 import React, {useState, useEffect} from 'react';
 import styles from '../stylesheets/modal.module.css'
 import style from '../stylesheets/todo.module.css'
-import { fetchTasks } from '../db/firebase.js';
 
 const Todo = (props) => {
 
@@ -26,16 +25,16 @@ const Todo = (props) => {
 		setModal('10px')
 	}
 
-	useEffect(() => {
-		fetchTasks('incomplete')
-		.then(res => {
-			setIncompleteTaskList(res["tasks"]);
-			fetchTasks('complete')
-			.then(resp => setCompleteTaskList(resp['tasks']))
-			.catch(err => console.log(err))
-		})
-		.catch(err => console.error(err))
-	}, [])
+	// useEffect(() => {
+	// 	fetchTasks('incomplete')
+	// 	.then(res => {
+	// 		setIncompleteTaskList(res["tasks"]);
+	// 		fetchTasks('complete')
+	// 		.then(resp => setCompleteTaskList(resp['tasks']))
+	// 		.catch(err => console.log(err))
+	// 	})
+	// 	.catch(err => console.error(err))
+	// }, [])
 
 	return(
 		<div className={style.todo} style={props.width}>
